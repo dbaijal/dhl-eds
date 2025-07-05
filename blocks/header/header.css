@@ -266,3 +266,29 @@ header nav .nav-sections ul > li > ul > li {
 header nav .nav-tools {
   grid-area: tools;
 }
+
+header .nav-wrapper {
+  position: sticky;
+  top: 0;
+  background: linear-gradient(to right, #FFCC00, #FFD700);
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  padding: 10px 20px;
+  align-items: center;
+  justify-content: space-between;
+}
+
+header .default-content-wrapper {
+  display: flex;
+  align-items: center;
+}
+
+header .default-content-wrapper img {
+  height: 40px;
+  margin-right: 20px;
+}
+
+header .section {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}

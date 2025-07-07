@@ -1,7 +1,5 @@
-import { fetchPlaceholders } from '../../scripts/aem.js';
 
 export default async function decorate(block) {
- const placeholders = await fetchPlaceholders();
  const aempublishurl = 'https://author-p99952-e1559416.adobeaemcloud.com';
   const persistedquery = '/graphql/execute.json/dhl-eds/getCaseStudyDetails';
   const contentPath = block.querySelector(':scope div:nth-child(1) > div a')?.textContent?.trim();
@@ -97,7 +95,7 @@ block.insertAdjacentHTML('beforeend', relatedHTML ); */
 if (cfReq?.relatedCaseStudies?.length > 0) {
 let relatedHTML = `
   <div class="casestudy-container">
-    <h1 class="related-section-title">${placeholders.relatedcasestudy}</h1>
+    <h1 class="related-section-title">Related CaseStudy</h1>
     <div class="card-grid">
 `;
 
